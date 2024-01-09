@@ -1,0 +1,206 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.3in, bottom=.3in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Mustafa Sohail} \\[6pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{} C @{} C}
+{{\raisebox{-0.05\height}{\faEnvelope} mustufasohail7@gmail.com}} 
+{{\raisebox{-0.05\height}{\faMobile} +92 317 1144882}} 
+{{\href{https://www.linkedin.com/in/nameisjamiele}{\raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/mustafa-sohail-187ab4206/}{Mustafa Sohail}}}}
+\end{tabularx}
+
+%EDUCATION
+\section{\textbf{Academic Qualification}}
+\begin{tabularx}{\linewidth}{ @{}l r@{}}
+\textbf{Undergraduate, Habib University University} \hfill \textbf{2020 - Present} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Computer Engineering Major
+        \item HU-TOPS Scholar (100\% Scholarship)
+    \end{itemize}
+\end{minipage} \\[4pt]
+
+
+\textbf{Intermediate, Aga Khan Higher Secondary School} \hfill \textbf{2018 - 2020}\\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Distinction Award for Highest Score in Mathematics
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%EXPERIENCE
+\section{\textbf{Work Experience}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{XovoTech} \hfill \textbf{Jun 2023 - Dec 2023} \\[4pt]
+% [Optional if needed] Company descriptor here in italics to describe unfamiliar companies - keep to 1 line \\[4pt]
+\textbf{Junior React Developer}\\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Contributed significantly to the development and deployment of 3 dynamic React projects, successfully bringing them to live production.
+        \item Collaborated closely with stakeholders in a team of 6 people to gather project requirements, ensuring understanding of their needs and delivering tailored solutions.
+        \item Drove a versatile project involving the creation of multiple design and functionality variants for a single website while implementing responsive design principles.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Position Title 2} (Apr 2021 - Aug 2022) \\[4pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+%         \item Money is denoted:  \$1K, \$1M, \$1B
+%         \item Showcase your transferable skills/strengths from former positions that are most relevant to a position and/or industry you are looking to pursue
+%         \item Do not use technical jargon nor focus on technical accomplishments – focus on the business implications of projects (leadership, team building, project management, problem solving)
+%         \item SMU “campus” resumes must be limited to 1 page
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Habib University}  \\[4pt]
+\textbf{Undergraduate Researcher} \hfill \textbf{Jun 2022 - Aug 2022} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Collaborated and assisted professors with their research on integrating renewable energy for a flowmeter device.
+        \item Conducted extensive literature review surrounding our research topic, presented various concepts extracted from these academic papers.
+        \item Developed Simulation Models on Simulink and performed data analysis using MATLAB.
+        \item Analyzed and Compared simulation and experimental results to evaluate the feasibility of implementing the project.
+    \end{itemize}
+\end{minipage}
+
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Teaching Assistant} \hfill \textbf{Aug 2021 - Dec 2021}
+\\ [4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Aided the professor in organizing classes for a cohort of 30 students for Programming Fundamentals course.
+        \item Organized weekly tutoring sessions to clarify student queries and help them with their projects.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+% ACADEMIC PROJECTS
+\section{\textbf{Academic Projects}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/aliasgharchakera/raytracer}{Ray Tracing Engine}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt] 
+        \item Raytracing engine designed in C++ for Computer Graphics.
+        \item Includes rendering scenes consisting of different primitives, materials, light sources and camera angles.
+        \item Sampling techniques and acceleration structures used to enhance rendered image and processing time respectively.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/Mustafasohail7/single_cycle_processor}{Single Cycle Processor}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt] 
+        \item Written and tested in verilog HDL for Computer Architecture.
+        \item Modular components designed according to the \href{https://github.com/Mustafasohail7/CA_Labs/assets/66203849/f3fc6bbe-66f0-498a-8ebf-cc1a026871b2}{RISC-V Architecture}.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/aliasgharchakera/flight-simulator}{Flight Simulator}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt] 
+        \item Flight Simulator designed with a few controls (roll, pitch, yaw) and a basic environment written using WebGL.
+        \item Dynamic Terrain with different viewing models and shaders rendered using rasterisation.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% EXTRA-CURRICULAR ACTIVITIES / LEADERSHIP ROLES
+\section{\textbf{Extra-Curricular Activities}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Member of Habib University Cricket Team '23-24
+        \item Vice President, Gaming Club '22-23
+        \item Deputy Director, Finance, HUMUN IV '22
+        \item PIAIC (Presidential Initiative for Artificial Intelligence \& Computing) Student for 4 quarters in 'Blockchain' and '4th Industrial Revolution' courses. 
+        \item Attended and Participated in IBA Leadership Conference '19
+        \item Captained the college team to win a competition at GIKI Math Olympiad '18.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%ADDITIONAL
+\section{\textbf{ADDITIONAL}}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Certifications: \href{https://www.coursera.org/account/accomplishments/specialization/certificate/JFTPKQFGPQER}{Blockchain Specialization}, University at Buffalo.
+        \item Technical Skills: Python, C/C++, C\#, JavaScript, MERN Stack, Solidity, Verilog HDL, MATLAB \& Simulink, LaTeX.
+        \item Language Skills: Fluent in English \& Urdu (Native)
+        \item Volunteer work: Campus Blood Drive, Habib University Bazm e Aqeedat Conference '20.
+        % \item Work Authorization: [List all that apply] Singapore (Part-time Internship), China (Citizen), India (Citizen)
+    \end{itemize}
+\end{minipage}
+
+\end{document}
