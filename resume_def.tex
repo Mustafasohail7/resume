@@ -1,0 +1,207 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+\usepackage{silence}
+\WarningsOff*
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.3in, bottom=.3in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Mustafa Sohail} \\[6pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{} C @{} C}
+{{\raisebox{-0.05\height}{\faEnvelope} mustufasohail7@gmail.com}} 
+{{\raisebox{-0.05\height}{\faMobile} +92 317 1144882}} 
+{{\href{https://mustafasohail7.github.io}{\raisebox{-0.05\height}{\faGlobe} Portfolio}}}
+{{\href{https://www.linkedin.com/in/mustafa-sohail-187ab4206/}{\raisebox{-0.05\height}{\faLinkedin} Mustafa Sohail}}}
+{{\href{https://github.com/Mustafasohail7}{\raisebox{-0.05\height}{\faGithub} Mustafasohail7}}}
+\end{tabularx}
+
+%EDUCATION
+\section{\textbf{Academic Qualification}}
+\begin{tabularx}{\linewidth}{ @{}l r@{}}
+\textbf{Undergraduate, Habib University} \hfill \textbf{2020 - 2024} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Computer Engineering Major
+        \item HU-TOPS Scholar (100\% Scholarship)
+    \end{itemize}
+\end{minipage} \\[4pt]
+
+
+\textbf{Intermediate, Aga Khan Higher Secondary School} \hfill \textbf{2018 - 2020}\\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Distinction Award for Highest Score in Mathematics
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%EXPERIENCE
+\section{\textbf{Work Experience}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{K-Electric} \hfill \textbf{Jul 2024 - Present} \\[4pt]
+    % [Optional if needed] Company descriptor here in italics to describe unfamiliar companies - keep to 1 line \\[4pt]
+    \textbf{Assistant Manager - Cybersecurity}\\[4pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+            \item Performed threat hunting, compromise assessments, cyber drills, and secure configuration assessments to identify indicators of compromise, validate detection capabilities, and uncover gaps in organizational defensive posture.
+            \item Mapped security controls, detection capabilities, and adversary behaviors against the MITRE ATT\&CK framework to identify coverage gaps, while triaging and investigating security alerts to improve detection and response effectiveness.
+            \item Assessed and hardened the security architecture of enterprise technologies including EDR, NDR, SIEM, PAM, VMware, Proxy, and EMS, strengthening deployed security controls and improving the organization's overall defensive posture.
+            \item Conducted Red Team, Purple Team, and Breach \& Attack Simulation exercises to emulate adversary techniques, validate defensive controls, and identify detection gaps across Web Application Firewall, Next Generation Firewall, and Microsoft Entra ID environments.
+            \item Designed and delivered two in-house security platforms: a Security Assessment Automation Platform integrating threat intelligence, dynamic analysis, and AI analysis, and an Operational Technology Vulnerability Management platform automating security assessment and remediation workflows, significantly reducing manual effort.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{XovoTech} \hfill \textbf{Jun 2023 - Dec 2023} \\[4pt]
+% [Optional if needed] Company descriptor here in italics to describe unfamiliar companies - keep to 1 line \\[4pt]
+\textbf{Junior React Developer}\\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Contributed to the development and deployment of 3 dynamic React projects, delivering responsive, production-ready applications with multiple design and functionality variants.
+        \item Collaborated in a 6-member team to gather requirements and deliver tailored solutions, ensuring stakeholder needs were met while maintaining high-quality design and performance.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Habib University}  \\[4pt]
+\textbf{Research Student} \hfill \textbf{Jun 2022 - Aug 2022} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Supported faculty research investigating renewable energy integration for a flowmeter device through literature review, technical analysis, and presentation of research findings.
+        \item Developed simulation models in Simulink and performed MATLAB based data analysis, comparing simulation and experimental results to evaluate project feasibility.
+    \end{itemize}
+\end{minipage}
+
+\end{tabularx}
+
+
+% EXTRA-CURRICULAR ACTIVITIES / LEADERSHIP ROLES
+\section{\textbf{Certifications \& Achievements}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+\textbf{Certifications}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Certified Ethical Hacker (CEH) - EC-Council, \textit{Aug 2026}    
+        \item \href{https://certs.ine.com/a94fd2a6-f00c-460d-ac60-462147fbde23}{Junior Penetration Tester (eJPT)} - INE, \textit{Sep 2025}
+        \item \href{https://www.credly.com/badges/0286da72-eb8e-45db-bfad-28cd2af7c71a/public_url}{Junior Cybersecurity Analyst Career Path} - Cisco Networking Academy \textit{Oct 2024}
+        \item \href{https://www.credly.com/badges/e31cce24-1238-4274-869e-a73954eae98c/public_url}{Certified in Cybersecurity (CC)} - ISC², \textit{Nov 2024}
+    \end{itemize}
+\vspace{2pt}
+\textbf{Achievements}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Finalist, Ignite National Cybersecurity Hackathon, \textit{2024}
+        \item Top 1\% Global - TryHackMe
+        \item Top 20\% - HackTheBox Sherlock Hackathon \textit{2025}
+        % \item Member of Habib University Cricket Team '23-24
+        % \item Vice President, Gaming Club '22-23
+        % \item Deputy Director, Finance, HUMUN IV '22
+        % \item PIAIC (Presidential Initiative for Artificial Intelligence \& Computing) Student for 4 quarters in 'Blockchain' and '4th Industrial Revolution' courses. 
+        % \item Attended and Participated in IBA Leadership Conference '19
+        % \item Captained the college team to win a competition at GIKI Math Olympiad '18.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% TECHNICAL SKILLS
+
+\section{\textbf{Technical Skills}}
+
+\begin{tabularx}{\linewidth}{ @{}l X@{} }
+
+\textbf{Cybersecurity} & Application Security, VAPT, DAST, SAST, Web, Mobile, API \& LLM Security, Secure SDLC, Secure Code Review, Red Teaming, Purple Teaming, Breach \& Attack Simulation, Threat Hunting, Vulnerability Management, Attack Surface Management \\[2pt]
+
+\textbf{Frameworks \& Tools} & MITRE ATT\&CK, OWASP, NIST, SANS VMMM, Burp Suite, Wazuh, Atomic Red Team, Wireshark, WAF, NGFW, EDR, NDR, SIEM, Microsoft Entra ID \\[2pt]
+
+\textbf{Development \& Platforms} & Python, C++, JavaScript, Git, CI/CD, Linux, VMware \\
+
+\end{tabularx}
+
+
+% % ACADEMIC PROJECTS
+% \section{\textbf{Academic Projects}}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{\href{https://github.com/aliasgharchakera/raytracer}{Ray Tracing Engine}} \\[4pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt] 
+%         \item Raytracing engine designed in C++ for Computer Graphics.
+%         \item Includes rendering scenes consisting of different primitives, materials, light sources and camera angles.
+%         \item Sampling techniques and acceleration structures used to enhance rendered image and processing time respectively.
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+
+%ADDITIONAL
+% \section{\textbf{ADDITIONAL}}
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+%         \item Certifications: \href{https://www.coursera.org/account/accomplishments/specialization/certificate/JFTPKQFGPQER}{Blockchain Specialization}, University at Buffalo.
+%         \item Technical Skills: Python, C/C++, C\#, JavaScript, MERN Stack, Solidity, Verilog HDL, MATLAB \& Simulink, LaTeX.
+%         \item Language Skills: Fluent in English \& Urdu (Native)
+%         \item Volunteer work: Campus Blood Drive, Habib University Bazm e Aqeedat Conference '20.
+%         % \item Work Authorization: [List all that apply] Singapore (Part-time Internship), China (Citizen), India (Citizen)
+%     \end{itemize}
+% \end{minipage}
+
+\end{document}
